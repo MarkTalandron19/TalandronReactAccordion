@@ -1,7 +1,7 @@
 import './index.css';
 import { useState } from 'react'
 
-export default function Questions({title, info}){
+export default function Questions({title, answer}){
   const [show, setShow] = useState(false);
     
   function handleClick(){
@@ -14,7 +14,7 @@ export default function Questions({title, info}){
             <h4>{title}</h4>
             <button className="btn" onClick={handleClick}>{show? '-': '+'}</button>
         </header>
-        <p>{show && info}</p>
+        <p>{answer && info}</p>
     </article>
   );
 }

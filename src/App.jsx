@@ -11,7 +11,7 @@ function App() {
           <section className="info">
             {data.map((question) =>{
               return(
-                <Questions key={question.id} title={question.title} info={question.answer}/>
+                <Questions key={question.id} title={question.title} answer={question.answer}/>
               );})}
           </section>
         </div>
