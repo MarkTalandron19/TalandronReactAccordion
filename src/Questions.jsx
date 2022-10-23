@@ -14,7 +14,7 @@ export default function Questions({title, answer}){
             <h4>{title}</h4>
             <button className="btn" onClick={handleClick}>{show? '-': '+'}</button>
         </header>
-        <p>{answer && info}</p>
+        <p>{show && answer}</p>
     </article>
   );
 }
